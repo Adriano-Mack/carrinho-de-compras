@@ -27,4 +27,20 @@ public class Carrinho {
         }
         return menor;
     }
+
+    boolean vazio() {
+        return produtos.isEmpty();
+    }
+
+    boolean contains(Produto livro) {
+        return produtos.contains(livro);
+    }
+
+    void remove(Produto p1) throws CarrinhoVazioExpected {
+        if (produtos.isEmpty())
+        {
+            throw new CarrinhoVazioExpected();
+        }
+        produtos.remove(p1);
+    }
 }
