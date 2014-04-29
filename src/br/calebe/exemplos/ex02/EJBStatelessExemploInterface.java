@@ -10,4 +10,6 @@ import javax.ejb.Remote;
 public interface EJBStatelessExemploInterface {
 
     String metodo(int i);
+    String pagamentoCartao(double valor);
+    String controleEstoque (int itens);
 }

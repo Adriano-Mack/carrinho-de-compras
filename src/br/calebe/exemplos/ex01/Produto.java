@@ -22,4 +22,8 @@ public class Produto {
     public boolean equals(Produto obj) {
         return nome.equals(obj.nome);
     }
+    
+    public String getNomeProduto(){
+        return nome;
+    }
 }
